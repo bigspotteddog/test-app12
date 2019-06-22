@@ -43,19 +43,17 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>3.2.1</version>
-        <configuration>
-                <!-- put your configurations here -->
-        </configuration>
+        <artifactId>maven-dependency-plugin</artifactId>
         <executions>
-                <execution>
-                        <phase>package</phase>
-                        <goals>
-                                <goal>shade</goal>
-                        </goals>
-                </execution>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>copy-dependencies</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${project.build.directory}/lib</outputDirectory>
+            </configuration>
+          </execution>
         </executions>
       </plugin>
     </plugins>
