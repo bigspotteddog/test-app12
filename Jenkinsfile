@@ -10,7 +10,7 @@ node {
       sh "'${mvnHome}/bin/mvn' clean package"
    }
    stage('Policy Evaluation') {
-       sh './scan/sh'
+       sh './scan.sh'
    }
    stage('Results') {
       archiveArtifacts 'target/*.jar'
