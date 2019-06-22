@@ -9,6 +9,9 @@ node {
       checkout scm
       sh "'${mvnHome}/bin/mvn' clean package"
    }
+   stage('Policy Evaluation') {
+       sh './scan/sh'
+   }
    stage('Results') {
       archiveArtifacts 'target/*.jar'
    }
