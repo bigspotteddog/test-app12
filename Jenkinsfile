@@ -5,6 +5,8 @@ node {
       mvnHome = tool 'M3'
    }
    stage('Build') {
+      deleteDir()
+      checkout scm
       sh "'${mvnHome}/bin/mvn' clean package"
    }
    stage('Results') {
