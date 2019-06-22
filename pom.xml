@@ -9,6 +9,8 @@
   
   <url>http://maven.apache.org</url>
   
+  <!-- comment -->
+  
   <dependencies>
     <dependency>
       <groupId>org.apache.struts</groupId>
