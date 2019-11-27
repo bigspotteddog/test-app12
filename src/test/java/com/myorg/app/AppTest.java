@@ -1,4 +1,4 @@
-package com.bigspotteddog;
+package com.myorg.app;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

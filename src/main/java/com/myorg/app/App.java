@@ -1,4 +1,4 @@
-package com.bigspotteddog;
+package com.myorg.app;
 
 public class App 
 {
