@@ -10,7 +10,7 @@ node {
       sh "'${mvnHome}/bin/mvn' clean package"
    }
    stage('Policy Evaluation') {
-       sh './scan.sh'
+       nexusPolicyEvaluation advancedProperties: '', failBuildOnNetworkError: false, iqApplication: selectedApplication('test-app'), iqStage: 'develop', jobCredentialsId: ''
    }
    stage('Results') {
       archiveArtifacts 'target/*.jar'
