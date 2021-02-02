@@ -1,0 +1,42 @@
+<bom version="1" serialNumber="urn:uuid:5981ab6d-88f4-43f3-9e98-2a442afa8e3d" xmlns="http://cyclonedx.org/schema/bom/1.1" xmlns:v="http://cyclonedx.org/schema/ext/vulnerability/1.0">
+  <components>
+    <component type="file" bom-ref="882870c4-4227-4036-b04c-b4d2f4164ee3">
+      <group>internal.sonatype.iac-security.regulator</group>
+      <name>aws_s3_bucket.test01</name>
+      <version>current</version>
+      <v:vulnerabilities>
+        <v:vulnerability ref="882870c4-4227-4036-b04c-b4d2f4164ee3">
+          <v:id>NIST-800-53_SC-13</v:id>
+          <v:source name="regula" />
+          <v:description>s3_bucket_sse rule failed</v:description>
+          <v:ratings>
+            <v:rating>
+              <v:score>
+                <v:base>9.0</v:base>
+              </v:score>
+            </v:rating>
+          </v:ratings>
+        </v:vulnerability>
+      </v:vulnerabilities>
+    </component>
+    <component type="file" bom-ref="75874d9f-5db1-4995-ad79-641bfb4ca952">
+      <group>internal.sonatype.iac-security.regulator</group>
+      <name>aws_s3_bucket.test02</name>
+      <version>current</version>
+      <v:vulnerabilities>
+        <v:vulnerability ref="75874d9f-5db1-4995-ad79-641bfb4ca952">
+          <v:id>NIST-800-53_SC-13</v:id>
+          <v:source name="regula" />
+          <v:description>s3_bucket_sse rule failed</v:description>
+          <v:ratings>
+            <v:rating>
+              <v:score>
+                <v:base>9.0</v:base>
+              </v:score>
+            </v:rating>
+          </v:ratings>
+        </v:vulnerability>
+      </v:vulnerabilities>
+    </component>
+  </components>
+</bom>

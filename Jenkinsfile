@@ -10,7 +10,7 @@ node {
       sh "'${mvnHome}/bin/mvn' clean package"
    }
    stage('Policy Evaluation') {
-      nexusPolicyEvaluation advancedProperties: '', failBuildOnNetworkError: false, iqApplication: selectedApplication('test-app'), iqStage: 'release', jobCredentialsId: '', terraformPlan: 'aws.large.json'
+      nexusPolicyEvaluation advancedProperties: '', enableDebugLogging: false, failBuildOnNetworkError: false, iqApplication: selectedApplication('test-app'), iqScanPatterns: [[scanPattern: 'plans/aws.large.tfplan'], [scanPattern: 'plans/regulator-bom.xml']], iqStage: 'develop', jobCredentialsId: ''
    }
    stage('Results') {
       archiveArtifacts 'target/*.jar'
