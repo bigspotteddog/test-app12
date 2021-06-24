@@ -4,6 +4,7 @@
       <group>internal.sonatype.iac-security.regulator</group>
       <name>aws_s3_bucket.test01</name>
       <version>current</version>
+      <purl>pkg:file/internal.sonatype.iac-security.regulator/aws_s3_bucket.test01@current</purl>      
       <v:vulnerabilities>
         <v:vulnerability ref="882870c4-4227-4036-b04c-b4d2f4164ee3">
           <v:id>NIST-800-53_SC-13</v:id>
@@ -23,6 +24,7 @@
       <group>internal.sonatype.iac-security.regulator</group>
       <name>aws_s3_bucket.test02</name>
       <version>current</version>
+      <purl>pkg:file/internal.sonatype.iac-security.regulator/aws_s3_bucket.test02@current</purl>      
       <v:vulnerabilities>
         <v:vulnerability ref="75874d9f-5db1-4995-ad79-641bfb4ca952">
           <v:id>NIST-800-53_SC-13</v:id>
