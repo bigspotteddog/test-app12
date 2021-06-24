@@ -1,1 +1,0 @@
-java -jar /Users/jcava/Downloads/nexus-iq-server-1.100.0-01-bundle/nexus-iq-cli-1.100.0-01.jar -i test-app -s http://localhost:8070 -a admin:admin123 -t release ./target/lib
