@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/depshield-testing/INT-906-test1#readme",
   "dependencies": {
-    "hawk": "2.3.1"
+    "hawk": "9.0.1"
   }
 }
